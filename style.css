@@ -1,0 +1,235 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 0.75rem;
+  }
+  .navbar a {
+    color: #333;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .navbar a:hover {
+    color: #575757;
+  }
+
+
+#dataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-left: 150px;  
+    padding-right: 150px;
+}
+
+.companyRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.destinationBox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 0.75rem;
+}
+
+/* Parent container */
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 150px;  
+    padding-right: 40px;
+}
+
+/* Text content 1 container */
+.flex-container .text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.text-content p {
+    font-size: 18px;
+}
+
+/* Buttons container */
+.flex-container .text-content .button-container {
+    margin-top: 10px;
+}
+
+/* Image container */
+.flex-container .imagecontainer1 {
+    flex: 1;
+}
+
+/* Image styling */
+.flex-container .imagecontainer1 .image1 {
+    max-width: 75%;
+}
+
+
+/* Text content 2 container */
+.flex-container2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0.75rem;
+    padding-left: 150px;  
+    padding-right: 150px;
+}
+
+/* Text content 2 container */
+.text-content2 {
+    flex: 1; /* This will take twice as much space as the image container */
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+.text-content2 h1, .text-content2 h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.text-content2 p {
+    text-align: center;
+}
+
+/* Image container */
+.flex-container .imagecontainer1 {
+    flex: 1;
+    margin-left: 150px;
+}
+
+/* Image styling */
+.flex-container2 .imagecontainer2 .image2 {
+    max-width: 100%;
+}
+
+#schedule-container {
+    padding: 0 150px; 
+    text-align: center; 
+}
+
+#schedule-container table {
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.schedule-container th, td {
+    border: 1px solid black;
+    padding: 8px 20px;
+    text-align: left;
+}
+.schedule-container th {
+    background-color: #f4f4f4;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 10px;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  p, span, a, button, input {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+
+  .text-content .my-button, .text-content .my-button2 {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #7D4E57; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline-color: transparent;
+}
+
+.my-button:hover, .my-button2:hover {
+    background-color: #7D4E57; /* Darker green */
+}
+
+/* Medium Screens */
+@media only screen and (max-width: 1023px) {
+    /* Adjustments for medium-sized screens, like tablets */
+    .flex-container, .flex-container2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .flex-container .imagecontainer1 {
+        margin-left: 50px;
+    }
+
+    #schedule-container {
+        padding: 0 50px;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 767px) {
+    /* Adjustments for small screens, like mobiles */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container, .flex-container2 {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flex-container .imagecontainer1, .text-content, .text-content2 {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .flex-container .imagecontainer1 .image1, .flex-container2 .imagecontainer2 .image2 {
+        max-width: 100%;
+    }
+
+    #schedule-container {
+        padding: 0 20px;
+    }
+}
+
