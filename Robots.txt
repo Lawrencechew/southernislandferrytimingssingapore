@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lawrencechew.github.io/southernislandferrytimingssingapore/sitemap.xml
