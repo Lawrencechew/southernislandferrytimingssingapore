@@ -155,7 +155,7 @@
 
 #contact button {
     padding: 10px;
-    background-color: #333;
+    background-color: #258;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   .text-content .my-button, .text-content .my-button2 {
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #7D4E57; /* Green */
+    background-color: #258; 
     border: none;
     color: white;
     cursor: pointer;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .my-button:hover, .my-button2:hover {
-    background-color: #7D4E57; /* Darker green */
+    background-color: #258; 
 }
 
 /* Medium Screens */

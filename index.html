@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find real-time ferry timings to the Southern Islands of Singapore and plan your journey with ease.">
+    <link rel="canonical" href="https://lawrencechew.github.io/southernislandferrytimingssingapore/">
     <title>Ferries to the Southern Islands</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -18,47 +20,42 @@
       </div>
       
     
-    <div class="flex-container">
-        <div class="text-content">
+    <section class="flex-container">
+        <article class="text-content">
             <h1 style="font-size: 64px;">Southern Island Ferry Timings</h1>
-            <p style="font-size: 16px;">Discover your hassle-free gateway to the Southern Islands with our one-stop website! Equipped with real-time ferry timings, our platform offers an unmatched tool for easy planning and smooth sailing. 
-                Venture to paradise on your own terms, and never miss the boat again! Visit the Ferry Operators below to book your tickets today!</p>
+            <p style="font-size: 16px;">Discover your hassle-free gateway to the Southern Islands with our one-stop website! Equipped with real-time ferry timings, our platform offers an unmatched tool for easy planning and smooth sailing. Venture to paradise on your own terms, and never miss the boat again! Visit the Ferry Operators below to book your tickets today!</p>
             <div class="button-container">
                 <button class="my-button" onclick="handleButtonClick()">Singapore Island Cruise and Ferry Services</button>
                 <button class="my-button2" onclick="handleButton2Click()">Marina South Ferries</button>
             </div>
-        </div>
+        </article>
     
         <!-- Image 1 -->
         <div class="imagecontainer1">
-            <img src="Marina_South_Pier.jpg" class="image1">
+            <img src="Marina_South_Pier.jpg" class="image1" alt="View of Marina South Pier">
         </div>
-    </div>
+    </section>
     
     <div id="dataContainer"></div>
 
     <!-- About Section -->
-    <div id="flex-container2" class="flex-container2">
-            <div class="imagecontainer2">
-                <img src="lazarus-island.jpg" class="image2">
-            </div>
-            <div class="text-content2">
-                <h2>About</h2>
-                <p>
-                    Welcome to our website, your ultimate resource for ferry timings to the beautiful Southern islands of Singapore. Discover the perfect getaway to St John's Island, Kusu Island, and more. 
-                    Our website provides up-to-date and accurate information on ferry schedules departing from Marina South Pier, ensuring you never miss a trip. 
-                    Plan your island adventure with confidence and convenience using our comprehensive ferry timetable. Explore the pristine beaches, rich marine life, and serene nature of the Southern islands with ease, knowing that you have access to reliable ferry timings at your fingertips. 
-                    For more information on the ferries and services provided, please refer to the links that will bring you to the web pages of the ferry services companies.
-                </p>
-            </div>
+    <section id="flex-container2" class="flex-container2">
+        <div class="imagecontainer2">
+            <img src="lazarus-island.jpg" class="image2" alt="Lazarus Island View">
         </div>
+        <article class="text-content2">
+            <h2>About</h2>
+            <p>Welcome to our website, your ultimate resource for ferry timings to the beautiful Southern islands of Singapore. Discover the perfect getaway to St John's Island, Kusu Island, and more. Our website provides up-to-date and accurate information on ferry schedules departing from Marina South Pier, ensuring you never miss a trip. Plan your island adventure with confidence and convenience using our comprehensive ferry timetable. Explore the pristine beaches, rich marine life, and serene nature of the Southern islands with ease, knowing that you have access to reliable ferry timings at your fingertips. For more information on the ferries and services provided, please refer to the links that will bring you to the web pages of the ferry services companies.</p>
+        </article>
+    </section>
 
 
     
 
-    <div id="schedule-container">
-    <h1>Southern Island Ferry Schedule</h1>
-    <table border="1">
+    <section id="schedule-container">
+        <h1>Southern Island Ferry Schedule</h1>
+    
+        <table border="1">
             <tr>
                 <th>Company</th>
                 <th>Departing From</th>
@@ -131,23 +128,20 @@
                 <td>16:00, 18:00</td>
             </tr>
         </table>
-    </div>
+    </section>
 
     <!--Contact Section-->
-
-    <div id="contact">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Have any feedback for the website? Lets get in touch and talk about it.</p>
-        <form action="/action_page.php" target="_blank">
-          <input type="text" placeholder="Name" required name="Name">
-          <input type="text" placeholder="Email" required name="Email">
-          <input type="text" placeholder="Subject" required name="Subject">
-          <input type="text" placeholder="Comment" required name="Comment">
-          <button type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
-    </div>
+        <p>Have any feedback for the website? Let's get in touch and talk about it.</p>
+        <form action="mailto:Lawrence.chew.zx@gmail.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Name" name="Name">
+            <input type="text" placeholder="Email" name="Email">
+            <input type="text" placeholder="Subject" name="Subject">
+            <textarea placeholder="Comment" name="Comment"></textarea>
+            <button type="submit">SEND MESSAGE</button>
+        </form>        
+    </section>
 
 
     <script src="script.js"></script>
